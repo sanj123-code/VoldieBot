@@ -8,7 +8,7 @@ import google.generativeai as genai
 app = Flask(__name__)  # creates your web server
 
 # Paste your Gemini API key here
-genai.configure(api_key="AIzaSyAfEJDHpRtMhvRvFKBtQpl4UVFy8W7Np0k")
+genai.configure(api_key="AIzaSyCVlXJbbgtemQn9KRaZ7-K3WGBFJ00LUpw")
 
 # ---- YOUR SYSTEM PROMPT (your prompt engineering!) ----
 

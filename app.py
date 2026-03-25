@@ -8,7 +8,7 @@ import google.generativeai as genai
 app = Flask(__name__)  # creates your web server
 
 # Paste your Gemini API key here
-genai.configure(api_key="AIzaSyCVlXJbbgtemQn9KRaZ7-K3WGBFJ00LUpw")
+genai.configure(api_key="AIzaSyBglQW4i4ZjkQWwsXfyCuIWJmcaaAgj6vY")
 
 # ---- YOUR SYSTEM PROMPT (your prompt engineering!) ----
 
@@ -73,3 +73,6 @@ def chat():
 
 if __name__ == "__main__":
     app.run(debug=True)
+import os
+port =int(os.environ.get("PORT",10000))
+app.run(host="0.0.0.0",port=port)
